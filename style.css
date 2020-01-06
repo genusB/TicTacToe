@@ -1,0 +1,133 @@
+body {
+    background-image: url(./img/back_menu.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.container{
+    width: 450px;
+    height: 450px;
+    display: block;
+    margin: 25px auto;
+    position: relative;
+}
+
+#cvs{
+    position: absolute; 
+}
+
+.options{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+}
+
+.options h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #6eaac0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.options div{
+    display: inline-block;
+}
+
+.options .computer, .x{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px;
+    border-radius: 15px;
+    margin-left: 70px;
+    width: 150px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.3em;
+    background-color: #6eaac0;
+    color: #ffffff;
+    text-align: center;
+    
+}
+
+.options .friend, .o{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 5px;
+    border-radius: 15px;
+    margin-left: 10px;
+    width: 150px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.3em;
+    background-color: #6eaac0;
+    color: #ffffff;
+    text-align: center;
+}
+
+.options .friend:hover, .computer:hover, .x:hover, .o:hover{
+    background-color: #436673;
+    color: #FFF;
+}
+
+.options .play{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.3em;
+    width: 70px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    background-color: #6eaac0;
+    color: #FFF;
+    cursor: pointer;
+    transition: 100ms width ease-in;
+}
+.options .play:hover{
+    width: 110px;
+}
+
+.active{
+    background-color: #436673 !important;
+    color: #FFF !important;
+}
+
+.hide{
+    display: none;
+}
+
+.gameover{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border-radius: 20px;
+    background-color: #6ba7be;
+}
+.gameover h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    margin: 40px 0 20px 0;
+}
+
+.gameover .winner-img{
+    display: block;
+    margin: 20px auto;
+}
+
+.gameover .play{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    width: 150px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    background-color: #7bbfd8;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 100ms width ease-in;
+}
+.gameover .play:hover{
+    width: 200px;
+}
