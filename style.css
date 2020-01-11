@@ -1,7 +1,12 @@
 body {
     background-image: url(./img/back_menu.png);
+    background-position: center center;
+    background-color: rgb(5, 13, 46);
+    background-position: center;
     background-size:cover;
     background-repeat:no-repeat;
+    background-attachment: fixed;
+    min-height:100vh;
 }
 
 .container{
@@ -131,3 +136,27 @@ body {
 .gameover .play:hover{
     width: 200px;
 }
+
+
+@media screen and (max-width: 1400px) {
+.options{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+}
+
+.container{
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin: 25px auto;
+    position: relative;
+}
+
+ 
+  }
+  
+@media screen and (max-width: 1400px) and (orientation: landscape) {
+  
+      
+  }

@@ -1,15 +1,15 @@
 function init(player, OPPONENT){
 
-    const canvas = document.getElementById("cvs");
-    const ctx = canvas.getContext("2d");
+    var canvas = document.getElementById("cvs");
+    var ctx = canvas.getContext("2d");
 
-    const xImage = new Image();
+    var xImage = new Image();
     xImage.src = "img/X.png";
 
-    const oImage = new Image();
+    var oImage = new Image();
     oImage.src = "img/O.png";
 
-    const fieldImage = new Image();
+    var fieldImage = new Image();
     fieldImage.src = "img/field.png";
 
     let currentPlayer = player.man;
@@ -36,7 +36,14 @@ function init(player, OPPONENT){
         [2, 4, 6]
     ];
 
-    const SPACE_SIZE = 150;
+    if(window.matchMedia("(max-width: 1400px)")) {
+        var SPACE_SIZE = 120;
+    }
+    else {
+        var SPACE_SIZE = 150;
+    }
+
+    
 
     
     function drawBoard(){
@@ -50,6 +57,7 @@ function init(player, OPPONENT){
                 
                 const img = new Image();
                 img.src = "img/" + id + ".png";
+                img.style.marginLeft = "0.2em";
 
                 img.onload = function() {
                      ctx.drawImage(img, j * SPACE_SIZE, i * SPACE_SIZE);
